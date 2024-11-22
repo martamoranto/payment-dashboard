@@ -1,0 +1,11 @@
+name: payment-dashboard
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:80'
+    environment:
+      - VITE_STAGE=${VITE_STAGE}
