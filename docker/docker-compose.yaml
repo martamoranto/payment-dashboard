@@ -1,0 +1,7 @@
+name: payment-dashboard
+
+services:
+  app:
+    image: martamoranto/payment-dashboard:latest
+    ports:
+      - '8000:80'
